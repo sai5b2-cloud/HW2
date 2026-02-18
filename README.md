@@ -2,70 +2,36 @@
 Name: Sai Kumar Beesa
 ID: 700773299
 
-In this project implements a Bigram Language Model using Python. 
-The goal is to learn bigram probabilities from a small training corpus and use them to compute the probability of test sentences. 
-The model uses Maximum Likelihood Estimation (MLE) to estimate probabilities.
+This repository contains solutions for Homework 2 of Natural Language Processing.
 
-Training Corpus
+Topics
 
-The model is trained using the following sentences: I love NLP I love deep learning deep learning is fun
+Naive Bayes document classification
 
-Program Features
+Harms and bias in text classification
 
-The Python program performs the following tasks:
+Bigram language models
 
-Reads the training corpus.
+Zero-probability problem & Laplace smoothing
 
-Computes unigram counts (single word frequencies).
+Backoff models
 
-Computes bigram counts (pairs of consecutive words).
+Precision, recall, macro & micro averaging
 
-Calculates bigram probabilities using MLE:
+Programming
 
-P(w₂ | w₁) = Count(w₁,w₂) / Count(w₁)
+Implemented a bigram language model in Python
 
-Implements a function to compute the probability of any input sentence.
+Computed unigram and bigram counts
 
-Tests the model on two sentences:
+Calculated sentence probabilities using MLE
 
-I love NLP
+Implemented evaluation metrics from a confusion matrix
 
-I love deep learning
+Notes
 
-Prints the probability of each sentence.
+Code is well-commented
 
-Displays which sentence is preferred by the language model.
+Based on lecture slides and class material
 
-How to Run the Program
-
-Make sure Python 3 is installed.
-
-Download or clone the repository.
-
-Run the script:
-
-python bigram_model.py
-
-Expected Output
-
-The program will display:
-
-Unigram counts
-
-Bigram counts
-
-Bigram probabilities
-
-Sentence probabilities
-
-The preferred sentence based on higher probability
-
-Explanation
-
-The bigram language model assumes that the probability of a word depends only on the previous word. The model multiplies the probabilities of each bigram in a sentence to compute the final sentence probability. The sentence with the higher probability is considered more likely by the model.
-
-Notes: The model uses MLE without smoothing.
-
-If a bigram is not found in training data, its probability becomes zero.
-
-This implementation is intended for educational purposes and demonstration of NLP concepts.
+Uses core Python only
